@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Homepage</title>
+<meta charset="utf-8">
+<link rel="icon" href="" type="image/x-icon">
+<link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/kwicks-slider.css" type="text/css" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<script src="js/jquery.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.kwicks-1.5.1.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
+<script>
+if ($(window).width() > 1024) {
+    document.write("<" + "script src='js/jquery.preloader.js'></" + "script>");
+}
+</script>
+<script>
+jQuery(window).load(function () {
+    $x = $(window).width();
+    if ($x > 1024) {
+        jQuery("#content .row").preloader();
+    }
+    jQuery('.magnifier').touchTouch();
+    jQuery('.spinner').animate({
+        'opacity': 0
+    }, 1000, 'easeOutCubic', function () {
+        jQuery(this).css('display', 'none')
+    });
+});
+</script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<link rel="stylesheet" href="css/docs.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+<![endif]-->
+</head>
+<body>
+<div class="spinner"></div>
+<header>
+  <div class="container clearfix">
+    <div class="row">
+      <div class="span12">
+        <div class="navbar navbar_">
+          <div class="container">
+            <h1 class="brand brand_"><a href="index.html"><img alt="" src="img/logo.jpg"> </a></h1>
+            <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
+            <div class="nav-collapse nav-collapse_  collapse">
+              <ul class="nav sf-menu">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="sub-menu"><a href="index.html">About Us</a>
+                 
+                </li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="index.html">Club</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="bg-content">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="flexslider">
+          <ul class="slides">
+            <li> <img src="img/1.jpg" alt=""> </li>
+            <li> <img src="img/2.jpg" alt=""> </li>
+            <li> <img src="img/3.jpg" alt=""> </li>
+            <li> <img src="img/4.jpg" alt=""> </li>
+            <li> <img src="img/5.jpg" alt=""> </li>
+          </ul>
+        </div>
+        <span id="responsiveFlag"></span>
+        <div class="block-slogan">
+          <h2>Welcome! To Sparkz</h2>
+          <div>
+            <p><a href="#" class="link-1">Shope Now</a> Explore our New Arrivals in Sterling Silver and Exciting new colours in semi precious stone jewellery..</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="content" class="content-extra">
+    <div class="row-1">
+      <div class="container">
+        <div class="row">
+          <ul class="thumbnails thumbnails-1">
+            <li class="span3">
+              <div class="thumbnail thumbnail-1">
+                <h3>Earings</h3>
+                <img src="img/earings ads.jpg" alt="">
+                <section> <strong>At vero eos et accusamus et iusto </strong>
+                  <p>Odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                  <a href="#" class="btn btn-1">View More</a> </section>
+              </div>
+            </li>
+            <li class="span3">
+              <div class="thumbnail thumbnail-1">
+                <h3>Rings</h3>
+                <img src="img/rings ads.jpg" alt="">
+                <section> <strong>Deleniti atque corrupti quos</strong>
+                  <p>Dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+                  <a href="#" class="btn btn-1">View More</a> </section>
+              </div>
+            </li>
+            <li class="span3">
+              <div class="thumbnail thumbnail-1">
+                <h3>Pendent</h3>
+                <img src="img/pendent.jpg" alt="">
+                <section> <strong>Similique sunt in culpa qui officia </strong>
+                  <p>Deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                  <a href="#" class="btn btn-1">View More</a> </section>
+              </div>
+            </li>
+            <li class="span3">
+              <div class="thumbnail thumbnail-1">
+                <h3 class="title-1 extra">Bracelet</h3>
+                <img src="img/bracelet.jpg" alt="">
+                <section> <strong>Similique sunt in culpa qui officia</strong>
+                  <p>Deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                  <a href="#" class="btn btn-1">View More</a> </section>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <article class="span6">
+          <h3>What's New</h3>
+          <div class="wrapper">
+            <figure class="img-indent"><img src="img/wedcollec.jpg" alt=""></figure>
+            <div class="inner-1 overflow extra">
+              <div class="txt-1">Sed ut perspictis unde omnis natus error volupatem accusantium doloue laudantium, totam rem.</div>
+              Aperiam, eaque ipsa quae ab illo  veritatis et beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+              <div class="border-horiz"></div>
+              <div class="overflow">
+                <ul class="list list-pad">
+                  <li><a href="#">Wedding wear</a></li>
+                  <li><a href="#">Daily wear</a></li>
+                  <li><a href="#">Fashion</a></li>
+                  <li><a href="#">Party Wear</a></li>
+                </ul>
+                <ul class="list">
+                  <li><a href="#">Platinum Gold</a></li>
+                  <li><a href="#">Silver</a></li>
+                  <li><a href="#">Gifts</a></li>
+                  <li><a href="#">Pendent</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="span6">
+          <h3>Latest Wedding Collections</h3>
+          <ul class="list-photo">
+            <li><a href="img/wed1.jpg" class="magnifier"><img src="img/wed1.jpg" alt=""></a></li>
+            <li><a href="img/wed2.jpg" class="magnifier"><img src="img/wed2.jpg" alt=""></a></li>
+            <li><a href="img/wed3.jpg" class="magnifier"><img src="img/wed3.jpg" alt=""></a></li>
+            <li class="last"><a href="img/wed4.jpg" class="magnifier"><img src="img/wed4.jpg" alt=""></a></li>
+            <li><a href="img/wed5.jpg" class="magnifier"><img src="img/wed5.jpg" alt=""></a></li>
+            <li><a href="img/wed6.jpg" class="magnifier"><img src="img/wed6.jpg" alt=""></a></li>
+            <li><a href="img/wed7.jpg" class="magnifier"><img src="img/wed7.jpg" alt=""></a></li>
+            <li class="last"><a href="img/wed8.jpg" class="magnifier"><img src="img/wed8.jpg" alt=""></a></li>
+            <li><a href="img/wed3.jpg" class="magnifier"><img src="img/wed3.jpg" alt=""></a></li>
+            <li><a href="img/wed1.jpg" class="magnifier"><img src="img/wed1.jpg" alt=""></a></li>
+            <li><a href="img/wed4.jpg" class="magnifier"><img src="img/wed4.jpg" alt=""></a></li>
+            <li class="last"><a href="img/wed8.jpg" class="magnifier"><img src="img/wed8.jpg" alt=""></a></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container clearfix">
+    <ul class="list-social pull-right">
+      <li><a class="icon-1" href="#"></a></li>
+      <li><a class="icon-2" href="#"></a></li>
+      <li><a class="icon-3" href="#"></a></li>
+      <li><a class="icon-4" href="#"></a></li>
+    </ul>
+    <div class="privacy pull-left">Design by: <a href="http://www.templatemonster.com/">it2theworld</a> </div>
+  </div>
+</footer>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
